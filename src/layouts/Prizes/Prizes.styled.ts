@@ -8,6 +8,7 @@ export const PrizesWrapper = styled.section`
   padding: 4.63rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 2;
+  position: relative;
 
   .overlayP1 {
     width: 34.25rem;
@@ -25,6 +26,67 @@ export const PrizesWrapper = styled.section`
     top: 8rem;
     left: 38rem;
     z-index: -1;
+  }
+
+  .white1,
+  .white2,
+  .white3,
+  .grey1,
+  .grey2 {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+  }
+
+  .pink1 {
+    width: 1.3125rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    left: 18.88rem;
+    top: 2.94rem;
+  }
+
+  .pink2 {
+    width: 1.3125rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    left: 65.31rem;
+    top: 10.19rem;
+    z-index:-1;
+  }
+
+  .white1 {
+    left: 43.88rem;
+    top: 15.19rem;
+  }
+
+  .white2 {
+    left: 85rem;
+    top: 21.44rem;
+  }
+
+  .white3 {
+    left: 33.8rem;
+    top: 38rem;
+  }
+
+  .white4 {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    left: 18.31rem;
+    top: 46.69rem;
+  }
+
+  .grey1 {
+    left: 63.12rem;
+    top: 14.19rem;
+    z-index: -1;
+  }
+
+  .grey2 {
+    left: 70.56rem;
+    top: 46.38rem;
   }
 `;
 
@@ -115,13 +177,11 @@ export const PrizeDetails = styled.div<{
   .position {
     font-size: ${({ $fontSize }) => $fontSize};
     font-weight: 700;
-    // line-height: 216.4%; /* 4.869rem */
   }
 
   .runner {
     font-size: 1.5rem;
     font-weight: 600;
-    // line-height: 216.4%; /* 3.246rem */
   }
 
   .reward {

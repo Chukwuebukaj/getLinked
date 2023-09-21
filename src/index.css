@@ -22,3 +22,9 @@ select:focus {
   outline: none;
 }
 
+a button:hover {
+  background: transparent;
+  border-radius: 0.25rem;
+  border: 1px solid #ff29b9;
+}
+

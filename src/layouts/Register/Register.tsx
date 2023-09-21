@@ -14,6 +14,14 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Success from "../Success/Success";
 import { toast } from "react-toastify";
+import PurpleOverLay from "../../components/PurpleOverLay";
+import {
+  GreyStarSmall,
+  PinkStarSmall,
+  PurpleStarSmall,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
+import Modal from "../../components/Modal";
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const Register = () => {
@@ -70,7 +78,7 @@ const Register = () => {
       toast.warn("👈🏻 kindly accept terms and conditions", {
         style: {
           marginTop: "32rem",
-          backgroundColor: "#150E28",
+          backgroundColor: "#140D27",
           color: "#fff",
           border: "1px solid #D434FE",
           fontSize: "0.875rem",
@@ -88,7 +96,9 @@ const Register = () => {
       console.error(error);
       error.response
         ? toast.error(error.response.data.email[0])
-        : toast.error(error.message);
+        : error.message
+        ? toast.error(error.message)
+        : toast.error("Something went wrong. Try again");
     }
   };
 
@@ -99,7 +109,9 @@ const Register = () => {
   return (
     <>
       {successful ? (
-        <Success />
+        <Modal>
+          <Success />
+        </Modal>
       ) : (
         <RegisterWrapper>
           <RegisterLeft></RegisterLeft>
@@ -162,6 +174,13 @@ const Register = () => {
               <Button children="Register Now" type="submit" />
             </FormWrapper>
           </RegisterForm>
+          <PurpleOverLay className={"overlay1"} />
+          <PurpleOverLay className={"overlay2"} />
+          <PinkStarSmall className={"pink"} />
+          <GreyStarSmall className={"grey1"} />
+          <GreyStarSmall className={"grey2"} />
+          <PurpleStarSmall className={"purple"} />
+          <WhiteStarSmall className={"white"} />
         </RegisterWrapper>
       )}
     </>

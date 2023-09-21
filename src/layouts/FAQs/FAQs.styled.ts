@@ -3,12 +3,64 @@ import styled from "styled-components";
 export const FAQWrapper = styled.section`
   display: flex;
   gap: 1.56;
-  padding: 8rem 6.31rem 3.94rem 13.69rem;
+  padding: 8rem 6.31rem 3.94rem 13.44rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   align-items: center;
   z-index: 2;
   overflow: hidden;
   width: 100vw;
+  position: relative;
+
+  .question1,
+  .question3 {
+    left: 47rem;
+    top: 6rem;
+  }
+  .question2 {
+    left: 55rem;
+    top: 1rem;
+  }
+
+  .question3 {
+    left: 67rem;
+  }
+
+  .purple {
+    width: 1.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    left: 11.44rem;
+    top: 8rem;
+  }
+
+  .pink {
+    width: 1.3125rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    left: 63.75rem;
+    top: 7rem;
+  }
+
+  .pink1 {
+    left: 51.19rem;
+    top: 15.5rem;
+  }
+
+  .grey {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 45rem;
+    top: 30rem;
+  }
+
+  .white {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 76.62rem;
+    top: 53rem;
+  }
 `;
 
 export const FAQLeft = styled.div`

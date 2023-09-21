@@ -9,9 +9,9 @@ export const getLinkedInfo: string =
   "Getlinked Tech Hackathon is a technology innovation program established by a group of organizations with the aim of showcasing young and talented individuals in the field of technology";
 
 export const usefulLinks: { title: string; path: string }[] = [
-  { title: "Overview", path: "overview" },
-  { title: "Timeline", path: "timeline" },
-  { title: "FAQs", path: "faqs" },
+  { title: "Overview", path: "#overview" },
+  { title: "Timeline", path: "#timeline" },
+  { title: "FAQs", path: "#faqs" },
   { title: "Register", path: "register" },
 ];
 

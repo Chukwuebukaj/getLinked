@@ -1,9 +1,14 @@
+import {
+  GreyStarSmall,
+  PurpleStarSmall,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
 import { TimelineWrapper, TimeLineTop, TimeLineBody } from "./TimeLine.styled";
 import { timeLineInfo, topPara } from "./TimeLineData";
 
 const TimeLine = () => {
   return (
-    <TimelineWrapper>
+    <TimelineWrapper id="timeline">
       <TimeLineTop>
         <span>Timeline</span>
         <p>{topPara}</p>
@@ -24,6 +29,9 @@ const TimeLine = () => {
           </li>
         ))}
       </TimeLineBody>
+      <PurpleStarSmall className={"purple"} />
+      <WhiteStarSmall className={"white"} />
+      <GreyStarSmall className={"grey"} />
     </TimelineWrapper>
   );
 };

@@ -5,12 +5,45 @@ export const FooterWrapper = styled.footer`
   flex-direction: column;
   padding: 4.19rem 10.94rem 0 10.94rem;
   background: #100b20;
+  position: relative;
 
   .last {
     font-size: 0.75rem;
     font-weight: 400;
     line-height: normal;
     margin: 3.31rem auto;
+  }
+
+  .white1 {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    top: 6.69rem;
+    left: 6.56rem;
+  }
+
+  .white2 {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    left: 86.1rem;
+    top: 14.69rem;
+  }
+
+  .pink {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    left: 46.3rem;
+    top: 17.62rem;
+  }
+
+  .grey {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    left: 56rem;
+    top: 6.19rem;
   }
 `;
 
@@ -77,6 +110,13 @@ export const UsefulLinks = styled.ul`
     font-size: 0.75rem;
     font-weight: 400;
     line-height: 172.4%; /* 1.293rem */
+
+    &:hover {
+      background: linear-gradient(90deg, #903aff 3.08%, #ff26b9 93.85%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 `;
 
@@ -92,6 +132,10 @@ export const SocialMediaIcons = styled.div`
 
   a {
     color: #fff;
+
+    &:hover {
+      color: #d434fe;
+    }
   }
 `;
 

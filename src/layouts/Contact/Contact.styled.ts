@@ -6,8 +6,57 @@ export const ContactWrapper = styled.div`
   justify-content: space-between;
   position: relative;
   top: 7.7rem;
+  overflow: hidden;
 
-  // align-items: center;
+  .overlay1,
+  .overlay2 {
+    width: 64.8125rem;
+    height: 59.25rem;
+    flex-shrink: 0;
+    z-index: -1;
+  }
+
+  .overlay1 {
+    top: -13.3rem;
+    left: -20rem;
+  }
+
+  .overlay2 {
+    top: 18rem;
+    left: 56.7rem;
+  }
+
+  .pink {
+    width: 1.3125rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    left: 12.8rem;
+    top: 2.4rem;
+  }
+
+  .grey {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 78.2rem;
+    top: 1rem;
+  }
+
+  .purple {
+    width: 1.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    left: 42.1rem;
+    top: 33.6rem;
+  }
+
+  .white {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 84.9rem;
+    top: 42.2rem;
+  }
 `;
 
 export const ContactLeft = styled.div`
@@ -109,7 +158,6 @@ export const ContactForm = styled.form`
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #fff;
     padding: 0.8rem 1.81rem;
-    // font-family: Montserrat;
     margin-top: 2.44rem;
 
     &:focus {

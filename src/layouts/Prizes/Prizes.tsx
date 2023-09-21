@@ -9,6 +9,12 @@ import { prizeCardData, topPara } from "./PrizesData";
 import leftBgImg from "../../assets/9486889-1.png";
 import PrizeCard from "./PrizeCard";
 import PurpleOverLay from "../../components/PurpleOverLay";
+import {
+  GreyStarSmall,
+  PinkStarSmall,
+  WhiteStarBig,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
 
 const Prizes = () => {
   return (
@@ -42,6 +48,14 @@ const Prizes = () => {
           <PurpleOverLay className={"overlayP2"} />
         </PrizesRight>
       </PrizesBody>
+      <PinkStarSmall className={"pink1"} />
+      <PinkStarSmall className={"pink2"} />
+      <WhiteStarBig className={"white1"} />
+      <WhiteStarBig className={"white2"} />
+      <WhiteStarSmall className={"white3"} />
+      <WhiteStarSmall className={"white4"} />
+      <GreyStarSmall className={"grey1"} />
+      <GreyStarSmall className={"grey2"} />
     </PrizesWrapper>
   );
 };

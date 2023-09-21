@@ -7,6 +7,72 @@ export const PrivacyWrapper = styled.section`
   padding: 10.44rem 9.19rem;
   align-items: flex-end;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+
+  .privacy-image {
+    width: 33.125rem;
+    height: 40.5rem;
+    flex-shrink: 0;
+    left: 51.69rem;
+    top: 6rem;
+    z-index: -1;
+  }
+
+  .grey1 {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 32.12rem;
+    top: 9.94rem;
+  }
+
+  .grey2 {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 85.06rem;
+    top: 54.63rem;
+  }
+
+  .white1 {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    left: 79.06rem;
+    top: 17.125rem;
+  }
+
+  .purple1 {
+    width: 1.4375rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    left: 45.8rem;
+    top: 17.5rem;
+  }
+
+  .pink {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    left: 61.9rem;
+    top: 43.56rem;
+  }
+
+  .white2 {
+    width: 0.9375rem;
+    height: 1.125rem;
+    flex-shrink: 0;
+    left: 57.6rem;
+    top: 50.19rem;
+  }
+
+  .purple2 {
+    width: 1.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    left: 6.25rem;
+    top: 52.38rem;
+  }
 `;
 export const PrivacyLeft = styled.div`
   display: flex;
@@ -19,8 +85,8 @@ export const PrivacyLeft = styled.div`
     flex-shrink: 0;
     background-blend-mode: hard-light;
     z-index: -1;
-    top: 500rem;
-    left: -10rem;
+    top: 47.62rem;
+    left: -12rem;
   }
 `;
 export const PrivacyRight = styled.div`
@@ -96,6 +162,12 @@ export const Bottom = styled.div`
     line-height: normal;
     border: 1px solid transparent;
     margin: 0 auto;
+
+    &:hover {
+      background: transparent;
+      border-radius: 0.25rem;
+      border: 1px solid #ff29b9;
+    }
   }
 
   span {

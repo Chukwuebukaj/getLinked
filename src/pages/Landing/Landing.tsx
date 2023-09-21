@@ -38,10 +38,10 @@ const LandingPageWrapper = styled.div`
   display: flex;
   flex-direction: column;
   background: #150e28;
-  overflow: hidden;
   width: 100vw;
   position: relative;
   z-index: 2;
+  overflow-x:hidden;
 
   .overlay1 {
     width: 67.875rem;

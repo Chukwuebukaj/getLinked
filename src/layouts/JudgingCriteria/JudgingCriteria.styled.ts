@@ -9,7 +9,7 @@ export const JCWrapper = styled.section`
   z-index: 2;
   overflow: hidden;
   width: 100vw;
-  position:relative;
+  position: relative;
 
   .overlay-jc {
     width: 44.8125rem;
@@ -21,7 +21,31 @@ export const JCWrapper = styled.section`
     z-index: -1;
     border: 1px solid red;
     overflow: hidden;
+  }
 
+  .grey,
+  .white {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+  }
+
+  .purple-star {
+    width: 1.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    left: 13.44rem;
+    top: 4rem;
+  }
+
+  .grey {
+    left: 29.25rem;
+    top: 29.31rem;
+  }
+
+  .white {
+    left: 43rem;
+    top: 51rem;
   }
 `;
 
@@ -76,6 +100,12 @@ export const JCRight = styled.div`
     font-size: 1rem;
     font-weight: 400;
     line-height: normal;
+
+    &:hover {
+      background: transparent;
+      border-radius: 0.25rem;
+      border: 1px solid #ff29b9;
+    }
   }
 `;
 

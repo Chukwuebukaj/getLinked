@@ -8,6 +8,11 @@ import bgImage from "../../assets/8046554-1.png";
 import { judgingData } from "./JudgingCriteriaData";
 import Button from "../../components/Button";
 import PurpleOverLay from "../../components/PurpleOverLay";
+import {
+  GreyStarSmall,
+  PurpleStarSmall,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
 
 const JudgingCriteria = () => {
   return (
@@ -29,6 +34,9 @@ const JudgingCriteria = () => {
         <Button children="Read More" />
       </JCRight>
       {/* <PurpleOverLay className={"overlay-jc"} /> */}
+      <PurpleStarSmall className={"purple-star"} />
+      <GreyStarSmall className={"grey"} />
+      <WhiteStarSmall className={"white"} />
     </JCWrapper>
   );
 };

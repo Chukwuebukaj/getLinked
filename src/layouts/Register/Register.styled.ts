@@ -6,6 +6,65 @@ export const RegisterWrapper = styled.div`
   padding: 3.56rem 6rem 3.56rem 0;
   position: relative;
   top: 7.7rem;
+  overflow: hidden;
+
+  .overlay1,
+  .overlay2 {
+    width: 64.8125rem;
+    height: 59.25rem;
+    flex-shrink: 0;
+    z-index: -1;
+  }
+
+  .overlay1 {
+    top: -13.3rem;
+    left: -20rem;
+  }
+
+  .overlay2 {
+    top: 18rem;
+    left: 56.7rem;
+  }
+
+  .grey1 {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 73.4rem;
+    top: 4.7rem;
+  }
+
+  .pink {
+    width: 1.3125rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    top: 6.7rem;
+    left: 8rem;
+  }
+
+  .purple {
+    width: 1.4375rem;
+    height: 1.75rem;
+    flex-shrink: 0;
+    top: 37.9rem;
+    left: 37.3rem;
+  }
+
+  .grey2 {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    top: 44.8rem;
+    left: 8.69rem;
+  }
+
+  .white {
+    width: 0.625rem;
+    height: 0.75rem;
+    flex-shrink: 0;
+    left: 81.1rem;
+    top: 49.8rem;
+  }
 `;
 export const RegisterLeft = styled.div`
   width: 50%;

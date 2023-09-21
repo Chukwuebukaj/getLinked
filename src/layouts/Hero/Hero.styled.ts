@@ -10,8 +10,8 @@ export const HeroWrapper = styled.div`
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 2;
   overflow: hidden;
-  margin-top:7.7rem;
-  position:relative;
+  margin-top: 7.7rem;
+  position: relative;
 
   .hero-top {
     color: #fff;
@@ -21,6 +21,63 @@ export const HeroWrapper = styled.div`
     line-height: normal;
     margin-left: auto;
     margin-right: 3.44rem;
+  }
+
+  .metrix {
+    z-index: -1;
+    right: 0;
+  }
+
+  .curvedLine {
+    left: 70rem;
+    top: 4.5rem;
+  }
+
+  .whitestar {
+    top: 4.25rem;
+    left: 11.56rem;
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+  }
+
+  .lightbulb {
+    width: 3.3125rem;
+    height: 4.5625rem;
+    flex-shrink: 0;
+    left: 40.25rem;
+    top: 9.5rem;
+    z-index: -1;
+  }
+
+  .greystar-top {
+    width: 1.625rem;
+    height: 2rem;
+    left: 51.31rem;
+    top: 9.12rem;
+  }
+
+  .chain {
+    width: 5.375rem;
+    height: 5.375rem;
+    left: 44.12rem;
+    top: 18.69rem;
+  }
+
+  .blast {
+    left: 49.5rem;
+    top: 19.56rem;
+    width: 3.625rem;
+    height: 3.625rem;
+    flex-shrink: 0;
+  }
+
+  .greystar-bottom {
+    left: 35.69rem;
+    top: 37.81rem;
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
   }
 `;
 
@@ -69,6 +126,7 @@ export const Info = styled.div`
   .count-down {
     display: flex;
     margin-top: 4.81rem;
+    gap: 0.5rem;
 
     p {
       font-family: Unica One;

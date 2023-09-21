@@ -4,9 +4,36 @@ export const TimelineWrapper = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8.69rem;
+  gap: 13.38rem;
   padding: 4.5rem 4.69rem 2.62rem 4.69rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  position: relative;
+  height:auto;
+
+  .white,
+  .grey {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+  }
+
+  .purple {
+    width: 1.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    left: 21.12rem;
+    top: 16.63rem;
+  }
+
+  .white {
+    left: 76.25rem;
+    top: 45.87rem;
+  }
+
+  .grey {
+    left: 11.06rem;
+    top: 77.75rem;
+  }
 `;
 
 export const TimeLineTop = styled.div`
