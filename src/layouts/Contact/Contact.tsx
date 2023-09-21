@@ -11,6 +11,7 @@ import {
 import Button from "../../components/Button";
 import axios from "axios";
 import { useState } from "react";
+import { toast } from "react-toastify";
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const Contact = () => {
@@ -31,22 +32,32 @@ const Contact = () => {
 
   const submitContactForm = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const response = await axios.post(
-      `${baseUrl}/hackathon/contact-form`,
-      contactInfo
-    );
-    if (response.status === 201) {
-      setContactInfo({
-        first_name: "",
-        email: "",
-        phone_number: "",
-        message: "",
-      });
+    try {
+      const response = await axios.post(
+        `${baseUrl}/hackathon/contact-form`,
+        contactInfo
+      );
+      if (response.status === 201) {
+        setContactInfo({
+          first_name: "",
+          email: "",
+          phone_number: "",
+          message: "",
+        });
+        toast.success("Your message was sent successfully");
+      }
+      console.log(response);
+    } catch (error: any) {
+      console.error(error);
+      toast.error(error.message);
     }
-    console.log(response);
   };
 
   console.log(contactInfo);
+
+  // setInterval(function displayToast() {
+  //   toast.success("Your message was sent successfully");
+  // }, 5000);
 
   return (
     <ContactWrapper>
@@ -71,6 +82,7 @@ const Contact = () => {
         {placeHolders.map((item, index) =>
           index === 3 ? (
             <TextArea
+              key={index}
               placeholder={item.title}
               name={Object.keys(contactInfo)[index]}
               onChange={handleInputChange}
@@ -80,6 +92,7 @@ const Contact = () => {
             />
           ) : (
             <InputField
+              key={index}
               placeholder={item.title}
               name={Object.keys(contactInfo)[index]}
               value={contactInfo[Object.keys(contactInfo)[index]]}

@@ -13,6 +13,7 @@ import { BsCheckLg } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Success from "../Success/Success";
+import { toast } from "react-toastify";
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const Register = () => {
@@ -65,14 +66,29 @@ const Register = () => {
 
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    if (!userDetails.privacy_poclicy_accepted) {
+      toast.warn("👈🏻 kindly accept terms and conditions", {
+        style: {
+          marginTop: "32rem",
+          backgroundColor: "#150E28",
+          color: "#fff",
+          border: "1px solid #D434FE",
+          fontSize: "0.875rem",
+        },
+      });
+      return;
+    }
     try {
       const response = await axios.post(
         `${baseUrl}/hackathon/registration`,
         userDetails
       );
       response.status === 201 && setSuccessful(true);
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
+      error.response
+        ? toast.error(error.response.data.email[0])
+        : toast.error(error.message);
     }
   };
 

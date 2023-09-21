@@ -17,7 +17,7 @@ export const terms: { icon: ReactNode; content: string }[] = [
         fill="none"
       >
         <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100" />
-        <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2" />
+        <path d="M5 8L7 10.5L13.5 6" stroke="white" strokeWidth="2" />
       </svg>
     ),
     content:
@@ -34,7 +34,7 @@ export const terms: { icon: ReactNode; content: string }[] = [
         fill="none"
       >
         <circle cx="8.5" cy="8.5" r="8.5" fill="#2DE100" />
-        <path d="M5 8L7 10.5L13.5 6" stroke="white" stroke-width="2" />
+        <path d="M5 8L7 10.5L13.5 6" stroke="white" strokeWidth="2" />
       </svg>
     ),
     content:
