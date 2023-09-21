@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  background: #150e28;
+}
+
+/* font-family: 'Clash Display', sans-serif; */
+
+button,
+a,
+select {
+  cursor: pointer;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
