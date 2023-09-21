@@ -3,30 +3,18 @@ import greenCircle from "../../assets/green-circle.png";
 import happyMan from "../../assets/happy-man.png";
 import wink from "../../assets/wink.png";
 
-export const SuccessContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  z-index: 199;
-  background: rgba(21, 14, 40, 0.93);
-`;
-
 export const SuccessWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  width: 42.6875rem;
-  height: 40.5rem;
+  width: 43.6875rem;
+  height: 41.5rem;
   flex-shrink: 0;
-  margin: auto;
-  padding: 2rem;
+  padding: 4rem;
   align-items: center;
   justify-content: space-between;
   border-radius: 0.3125rem;
   border: 1px solid #d434fe;
+  background: rgba(255, 255, 255, 0.01);
 
   a {
     width: 100%;
@@ -67,7 +55,7 @@ export const SuccessWrapper = styled.div`
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    margin-top: -2rem;
+    margin-top: -1rem;
   }
 `;
 
@@ -87,7 +75,6 @@ export const GreenCircle = styled.div`
   flex-shrink: 0;
   margin-right: -10rem;
   margin-top: -1rem;
-  //   position: absolute;
 `;
 
 export const HappyMan = styled.div`

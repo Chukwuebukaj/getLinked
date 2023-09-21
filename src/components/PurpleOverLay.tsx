@@ -13,5 +13,4 @@ const Wrapper = styled.div`
   position: absolute;
   background-color: transparent;
   background-blend-mode: hard-light;
-  // border-radius: 50%;
 `;

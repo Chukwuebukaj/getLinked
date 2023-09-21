@@ -1,12 +1,37 @@
 import styled from "styled-components";
 
-export const IntroWrapper = styled.div`
+export const IntroWrapper = styled.section`
   display: flex;
   align-items: center;
   gap: 6.81rem;
   padding: 3.87rem 9.56rem 4.88rem 15rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 2;
+  position: relative;
+
+  .small-pink {
+    width: 1.3125rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    top: 13.94rem;
+    left: 12.69rem;
+  }
+
+  .big-purple {
+    left: 84.19rem;
+    top: 13.5rem;
+    width: 1.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+  }
+
+  .curly {
+    width: 3.08938rem;
+    height: 3.62338rem;
+    flex-shrink: 0;
+    left: 43.06rem;
+    top: 30.61rem;
+  }
 `;
 
 export const IntroLeft = styled.div<{ $bgImg: string }>`

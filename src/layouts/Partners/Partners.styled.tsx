@@ -20,8 +20,33 @@ export const PartnersWrapper = styled.section`
   }
 
   .overlay-ps1 {
-    left:55rem;
-    top:30rem;
+    left: 55rem;
+    top: 30rem;
+    z-index:-1;
+  }
+
+  .purple {
+    width: 1.875rem;
+    height: 2.25rem;
+    flex-shrink: 0;
+    left: 13.5rem;
+    top: 14.38rem;
+  }
+
+  .pink {
+    width: 1.3125rem;
+    height: 1.5625rem;
+    flex-shrink: 0;
+    top: 24rem;
+    left: 50.69rem;
+  }
+
+  .white {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 50.5rem;
+    top: 47.94rem;
   }
 `;
 

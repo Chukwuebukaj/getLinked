@@ -17,6 +17,11 @@ import {
   socialMediaIcons,
   usefulLinks,
 } from "./FooterData";
+import {
+  GreyStarSmall,
+  PinkStarSmall,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
 
 const Footer = () => {
   return (
@@ -36,7 +41,11 @@ const Footer = () => {
           <UsefulLinks>
             {usefulLinks.map((link, index) => (
               <li key={index}>
-                <Link to={link.path}>{link.title}</Link>
+                {index < 3 ? (
+                  <a href={link.path}>{link.title}</a>
+                ) : (
+                  <Link to={link.path}>{link.title}</Link>
+                )}
               </li>
             ))}
           </UsefulLinks>
@@ -70,6 +79,10 @@ const Footer = () => {
         </Third>
       </FooterBody>
       <span className="last">All rights reserved. © getlinked Ltd.</span>
+      <WhiteStarSmall className={"white1"} />
+      <WhiteStarSmall className={"white2"} />
+      <PinkStarSmall className={"pink"} />
+      <GreyStarSmall className={"grey"} />
     </FooterWrapper>
   );
 };

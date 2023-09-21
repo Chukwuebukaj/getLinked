@@ -1,5 +1,10 @@
 import PurpleOverLay from "../../components/PurpleOverLay";
 import {
+  PinkStarSmall,
+  PurpleStarSmall,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
+import {
   PartnersWrapper,
   PartnersTop,
   PartnersList,
@@ -39,6 +44,9 @@ const Partners = () => {
       </PartnersList>
       <PurpleOverLay className={"overlay-ps"} />
       <PurpleOverLay className={"overlay-ps overlay-ps1"} />
+      <PurpleStarSmall className={"purple"} />
+      <PinkStarSmall className={"pink"} />
+      <WhiteStarSmall className={"white"} />
     </PartnersWrapper>
   );
 };

@@ -15,14 +15,25 @@ const Header = () => {
           {links.map((link, index) =>
             index < 4 ? (
               <li key={index}>
-                <Link
-                  className={
-                    location.pathname.slice(1) === link.path ? "current" : ""
-                  }
-                  to={link.path}
-                >
-                  {link.title}
-                </Link>
+                {index > 2 ? (
+                  <Link
+                    to={link.path}
+                    className={
+                      location.pathname.slice(1) === link.path ? "current" : ""
+                    }
+                  >
+                    {link.title}
+                  </Link>
+                ) : (
+                  <a
+                    className={
+                      location.pathname.slice(1) === link.path ? "current" : ""
+                    }
+                    href={link.path}
+                  >
+                    {link.title}
+                  </a>
+                )}
               </li>
             ) : (
               <Link to={link.path} key={index}>

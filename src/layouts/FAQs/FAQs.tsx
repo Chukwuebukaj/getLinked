@@ -3,12 +3,19 @@ import { bold, gotAnswers, questions } from "./FAQsData";
 import bgImage from "../../assets/cwok-casual-21-1.png";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { useState } from "react";
+import QuestionMark from "../../components/QuestionMark";
+import {
+  GreyStarSmall,
+  PinkStarSmall,
+  PurpleStarSmall,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
 
 const FAQs = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
 
   return (
-    <FAQWrapper>
+    <FAQWrapper id="faqs">
       <FAQLeft>
         <span className="top">Frequently Asked</span>
         <span className="top purple">Questions</span>
@@ -41,6 +48,26 @@ const FAQs = () => {
         </QuestionsList>
       </FAQLeft>
       <FAQRight $bgImg={bgImage}></FAQRight>
+      <QuestionMark
+        fontSize={"6rem"}
+        borderColor={"#A866FD"}
+        className={"question1"}
+      />
+      <QuestionMark
+        fontSize={"8rem"}
+        borderColor={"#D434FE"}
+        className={"question2"}
+      />
+      <QuestionMark
+        fontSize={"6rem"}
+        borderColor={"#A866FD"}
+        className={"question3"}
+      />
+      <PurpleStarSmall className={"purple"} />
+      <PinkStarSmall className={"pink"} />
+      <PinkStarSmall className={"pink pink1"} />
+      <GreyStarSmall className={"grey"} />
+      <WhiteStarSmall className={"white"} />
     </FAQWrapper>
   );
 };

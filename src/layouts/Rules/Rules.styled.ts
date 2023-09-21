@@ -6,8 +6,25 @@ export const RulesWrapper = styled.div`
   padding: 1rem 0 4.88rem 11.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 2;
-  overflow:hidden;
+  overflow: hidden;
+  position:relative;
 
+  .grey {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 27.44rem;
+    top: 10rem;
+  }
+
+  .white {
+    width: 1.625rem;
+    height: 2rem;
+    flex-shrink: 0;
+    left: 46.31rem;
+    top:29.06rem;
+
+  }
 `;
 export const RulesLeft = styled.div`
   display: flex;

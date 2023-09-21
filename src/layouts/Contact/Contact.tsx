@@ -12,6 +12,13 @@ import Button from "../../components/Button";
 import axios from "axios";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import {
+  GreyStarSmall,
+  PinkStarSmall,
+  PurpleStarSmall,
+  WhiteStarSmall,
+} from "../../components/TinyImages";
+import PurpleOverLay from "../../components/PurpleOverLay";
 const baseUrl = import.meta.env.VITE_BASE_URL;
 
 const Contact = () => {
@@ -46,18 +53,13 @@ const Contact = () => {
         });
         toast.success("Your message was sent successfully");
       }
-      console.log(response);
     } catch (error: any) {
       console.error(error);
-      toast.error(error.message);
+      error.message
+        ? toast.error(`${error.message}. Check your internet connection`)
+        : toast.error("Something went wrong. Try again");
     }
   };
-
-  console.log(contactInfo);
-
-  // setInterval(function displayToast() {
-  //   toast.success("Your message was sent successfully");
-  // }, 5000);
 
   return (
     <ContactWrapper>
@@ -106,6 +108,12 @@ const Contact = () => {
         )}
         <Button children="Submit" type="submit" />
       </ContactForm>
+      <PurpleOverLay className={"overlay1"} />
+      <PurpleOverLay className={"overlay2"} />
+      <PinkStarSmall className={"pink"} />
+      <GreyStarSmall className={"grey"} />
+      <WhiteStarSmall className={"white"} />
+      <PurpleStarSmall className={"purple"} />
     </ContactWrapper>
   );
 };
