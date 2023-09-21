@@ -4,8 +4,8 @@ export const ContactWrapper = styled.div`
   display: flex;
   padding: 5rem 8rem;
   justify-content: space-between;
-  position:relative;
-  top:7.7rem;
+  position: relative;
+  top: 7.7rem;
 
   // align-items: center;
 `;
