@@ -34,4 +34,5 @@ const QuestionWrapper = styled.span<{
   -webkit-text-stroke: 1px ${({ $borderColor }) => $borderColor};
   font-weight: 500;
   font-family: "MADE TOMMY Outline", sans-serif;
+  z-index:-1;
 `;

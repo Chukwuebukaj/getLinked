@@ -83,7 +83,7 @@ export const HeroWrapper = styled.div`
   @media (max-width: 768px) {
     padding: 0 1rem;
     gap: 3.62rem;
-    width:100vw;
+    width: 100vw;
 
     .hero-top {
       font-size: 1rem;
@@ -103,6 +103,48 @@ export const HeroWrapper = styled.div`
     .metrix {
       left: 0;
       bottom: 0;
+    }
+
+    .whitestar {
+      top: 3.25rem;
+      left: 7rem;
+      width: 0.625rem;
+      height: 0.75rem;
+    }
+
+    .lightbulb {
+      width: 1.125rem;
+      height: 1.625rem;
+      left: 16.9rem;
+      top: 4rem;
+    }
+
+    .greystar-top {
+      width: 0.375rem;
+      height: 0.5rem;
+      left: 20.3rem;
+      top: 3.12rem;
+    }
+
+    .chain {
+      width: 2.04981rem;
+      height: 2.04981rem;
+      left: 18.5rem;
+      top: 7.69rem;
+    }
+
+    .blast {
+      left: 20.3rem;
+      top: 7.9rem;
+      width: 1.38244rem;
+      height: 1.38244rem;
+    }
+
+    .greystar-bottom {
+      left: 18.3rem;
+      top: 15rem;
+      width: 0.375rem;
+      height: 0.5rem;
     }
   }
 `;
@@ -180,7 +222,7 @@ export const Info = styled.div`
   @media (max-width: 768px) {
     align-items: center;
     text-align: center;
-    width:100vw;
+    width: 100vw;
 
     .get-linked {
       font-size: 2rem;

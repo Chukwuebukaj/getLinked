@@ -38,6 +38,27 @@ export const IntroWrapper = styled.section`
     padding: 2rem;
     width: 100vw;
     gap: 3.62rem;
+
+    .curly {
+      width: 1.216rem;
+      height: 1.42613rem;
+      left: 11.3rem;
+      top: 18.5rem;
+    }
+
+    .big-purple {
+      left: 21.1rem;
+      top: 22.88rem;
+      width: 0.5rem;
+      height: 0.625rem;
+    }
+
+    .small-pink {
+      width: 0.6875rem;
+      height: 0.8125rem;
+      top: 7rem;
+      left: 3.56rem;
+    }
   }
 `;
 

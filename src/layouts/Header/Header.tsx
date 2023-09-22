@@ -40,7 +40,7 @@ const Header = () => {
                     className={
                       location.pathname.slice(1) === link.path ? "current" : ""
                     }
-                    href={link.path}
+                    href={location.pathname !== "/" ? "/" : link.path}
                   >
                     {link.title}
                   </a>

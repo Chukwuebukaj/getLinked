@@ -62,6 +62,42 @@ export const ContactWrapper = styled.div`
     flex-direction: column-reverse;
     padding: 2rem;
     width: 100vw;
+    top: 3.5rem;
+
+    .overlay1 {
+      width: 24.75rem;
+      height: 27.625rem;
+      left: -6rem;
+      // top: -14rem;
+    }
+
+    .pink {
+      width: 0.6875rem;
+      height: 0.8125rem;
+      left: 11.3rem;
+      top: 4.19rem;
+    }
+
+    .grey {
+      width: 1rem;
+      height: 1.25rem;
+      left: 20rem;
+      top: 4.63rem;
+    }
+
+    .purple {
+      width: 0.75rem;
+      height: 0.875rem;
+      left: 2.13rem;
+      top: 31rem;
+    }
+
+    .white {
+      width: 0.75rem;
+      height: 0.875rem;
+      left: 21.9rem;
+      top: 38.75rem;
+    }
   }
 `;
 

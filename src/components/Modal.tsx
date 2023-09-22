@@ -50,4 +50,27 @@ const ModalWrapper = styled.div`
     top: 42.6rem;
     left: 63.8rem;
   }
+
+  @media (max-width: 768px) {
+    .purple {
+      width: 0.625rem;
+      height: 0.75rem;
+      top: 7.5rem;
+      left: 17.8rem;
+    }
+
+    .grey {
+      width: 0.875rem;
+      height: 1.125rem;
+      top: 20.1rem;
+      left: 4.69rem;
+    }
+
+    .pink {
+      width: 0.6875rem;
+      height: 0.8125rem;
+      top: 35.6rem;
+      left: 19.4rem;
+    }
+  }
 `;

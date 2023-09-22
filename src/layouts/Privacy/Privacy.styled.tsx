@@ -86,6 +86,56 @@ export const PrivacyWrapper = styled.section`
       left: 4.56rem;
       top: 59.94rem;
     }
+
+    .grey1 {
+      width: 0.5rem;
+      height: 0.5rem;
+      left: 17.9rem;
+      top: 2.69rem;
+    }
+
+    .grey2 {
+      width: 0.5rem;
+      height: 0.5rem;
+      flex-shrink: 0;
+      left: 20.1rem;
+      top: 83.88rem;
+    }
+
+    .white1 {
+      width: 0.4375rem;
+      height: 0.5rem;
+      left: 16.4rem;
+      top: 65.69rem;
+    }
+
+    .purple1 {
+      width: 1.0625rem;
+      height: 1.25rem;
+      left: 19.1rem;
+      top: 14.5rem;
+    }
+
+    .pink {
+      width: 1.0625rem;
+      height: 1.25rem;
+      left: 2.44rem;
+      top: 64.44rem;
+    }
+
+    .white2 {
+      width: 0.5625rem;
+      height: 0.625rem;
+      left: 5.5rem;
+      top: 83.25rem;
+    }
+
+    .purple2 {
+      width: 1.0625rem;
+      height: 1.25rem;
+      left: 1.38rem;
+      top: 45.37rem;
+    }
   }
 `;
 export const PrivacyLeft = styled.div`
@@ -106,8 +156,16 @@ export const PrivacyLeft = styled.div`
   @media (max-width: 768px) {
     text-align: center;
     width: 100%;
+
+    .overlay-pr {
+      width: 17.8125rem;
+      height: 22.875rem;
+      top: 38rem;
+      left: -6rem;
+    }
   }
 `;
+
 export const PrivacyRight = styled.div`
   background: url("${bgImage}") no-repeat center;
   background-size: 100% 100%;

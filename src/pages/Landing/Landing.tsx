@@ -78,9 +78,28 @@ const LandingPageWrapper = styled.div`
     .overlay1 {
       width: 24.75rem;
       height: 27.625rem;
-      flex-shrink: 0;
-      left: -0.4rem;
-      top: 0.13rem;
+      left: -6rem;
+      top: 4rem;
+    }
+
+    .overlay2 {
+      width: 25.25rem;
+      height: 27.1875rem;
+      top: 95rem;
+      left: -4rem;
+    }
+
+    .overlay3 {
+      width: 27.875rem;
+      height: 27.875rem;
+      top: 110rem;
+      left: 14rem;
+      z-index: -1;
+    }
+
+    .overlay4 {
+      top: 200rem;
+      left: 4rem;
     }
   }
 `;
