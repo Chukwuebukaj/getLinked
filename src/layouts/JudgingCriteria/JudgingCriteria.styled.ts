@@ -47,6 +47,12 @@ export const JCWrapper = styled.section`
     left: 43rem;
     top: 51rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0;
+    padding: 4.62rem 1.81rem 3.67rem 1.81rem;
+  }
 `;
 
 export const JCLeft = styled.div<{ $bgImg: string }>`
@@ -63,6 +69,11 @@ export const JCLeft = styled.div<{ $bgImg: string }>`
     margin-top: 8rem;
     left: -10rem;
     z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 17.1875rem;
   }
 `;
 
@@ -106,6 +117,12 @@ export const JCRight = styled.div`
       border-radius: 0.25rem;
       border: 1px solid #ff29b9;
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+    text-align: center;
   }
 `;
 

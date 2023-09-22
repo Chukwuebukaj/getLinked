@@ -19,7 +19,7 @@ const FAQs = () => {
       <FAQLeft>
         <span className="top">Frequently Asked</span>
         <span className="top purple">Questions</span>
-        <p>
+        <p className="got-answers">
           {gotAnswers} <span>{bold}</span>
         </p>
         <QuestionsList>
@@ -63,7 +63,7 @@ const FAQs = () => {
         borderColor={"#A866FD"}
         className={"question3"}
       />
-      <PurpleStarSmall className={"purple"} />
+      <PurpleStarSmall className={"purple-icon"} />
       <PinkStarSmall className={"pink"} />
       <PinkStarSmall className={"pink pink1"} />
       <GreyStarSmall className={"grey"} />

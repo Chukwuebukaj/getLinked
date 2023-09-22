@@ -38,7 +38,6 @@ export const SuccessWrapper = styled.div`
 
   p {
     text-align: center;
-    font-size: 1rem;
     font-weight: 600;
     line-height: 0.1rem;
     font-size: 2rem;
@@ -57,6 +56,27 @@ export const SuccessWrapper = styled.div`
     gap: 0.5rem;
     margin-top: -1rem;
   }
+
+  @media (max-width: 768px) {
+    width: 90vw;
+    height: 90vh;
+    padding: 2rem;
+    justify-content: center;
+    gap: 1rem;
+
+    p {
+      font-size: 1rem;
+      line-height: normal;
+    }
+
+    .easy {
+      margin: 0;
+    }
+
+    .small {
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 export const ImagesWrapper = styled.div`
@@ -65,6 +85,11 @@ export const ImagesWrapper = styled.div`
   height: 20.0625rem;
   flex-shrink: 0;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: fit-content;
+  }
 `;
 
 export const GreenCircle = styled.div`
@@ -75,6 +100,12 @@ export const GreenCircle = styled.div`
   flex-shrink: 0;
   margin-right: -10rem;
   margin-top: -1rem;
+
+  @media (max-width: 768px) {
+    width: 10.91356rem;
+    height: 10.91356rem;
+    margin-right: -6rem;
+  }
 `;
 
 export const HappyMan = styled.div`
@@ -83,6 +114,11 @@ export const HappyMan = styled.div`
   width: 19.0625rem;
   height: 19.0625rem;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 11.55775rem;
+    height: 11.55775rem;
+  }
 `;
 
 export const WinkEmoji = styled.p`

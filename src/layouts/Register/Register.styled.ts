@@ -65,12 +65,24 @@ export const RegisterWrapper = styled.div`
     left: 81.1rem;
     top: 49.8rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+  }
 `;
 export const RegisterLeft = styled.div`
   width: 50%;
   height: 44.8125rem;
   flex-shrink: 0;
   background: url("${bgImage}") no-repeat center;
+  background-size: 100% 100%;
+
+  @media (max-width: 768px) {
+    width: 12.1875rem;
+    height: 9.6875rem;
+  }
 `;
 export const RegisterForm = styled.form`
   width: 50%;
@@ -113,6 +125,26 @@ export const RegisterForm = styled.form`
       justify-content: center;
       border-bottom: 1px dashed #d434fe;
       width: 6.3125rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    background: transparent;
+
+    .part {
+      font-size: 0.75rem;
+    }
+
+    .create {
+      font-size: 1.25rem;
+    }
+
+    .be-part img {
+      width: 1.65444rem;
+      height: 1.65444rem;
     }
   }
 `;
@@ -191,5 +223,48 @@ export const FormWrapper = styled.div`
     flex-shrink: 0;
     border: 1px solid transparent;
     color: #fff;
+  }
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1.12rem 1.19rem;
+
+    .category {
+      grid-row: 5 / span 1;
+      width: 9.6875rem;
+    }
+
+    .group-size {
+      grid-row: 5 / span 1;
+      width: 5.4375rem;
+      margin-left: auto;
+    }
+
+    button {
+      width: 10.75rem;
+      height: 3.3125rem;
+      margin: 0 auto;
+    }
+
+    label {
+      width: 100%;
+      grid-column: 1 / span 1;
+
+      span {
+        font-size: 0.8125rem;
+      }
+    }
+
+    input,
+    select {
+      padding: 0.75rem 0 0.75rem 0.5rem;
+      font-size: 0.8125rem;
+    }
+
+    .agree p {
+      font-size: 0.625rem;
+    }
   }
 `;

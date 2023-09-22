@@ -52,7 +52,7 @@ export const PrizesWrapper = styled.section`
     flex-shrink: 0;
     left: 65.31rem;
     top: 10.19rem;
-    z-index:-1;
+    z-index: -1;
   }
 
   .white1 {
@@ -88,6 +88,11 @@ export const PrizesWrapper = styled.section`
     left: 70.56rem;
     top: 46.38rem;
   }
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    padding: 4rem 2rem;
+  }
 `;
 
 export const PrizesTop = styled.div`
@@ -111,10 +116,31 @@ export const PrizesTop = styled.div`
   p {
     width: 27rem;
   }
+
+  @media (max-width: 768px) {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+    .title {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+      width: auto;
+      line-height: 170.9%; /* 1.28175rem */
+    }
+  }
 `;
 export const PrizesBody = styled.div`
   display: flex;
   gap: 2.31rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 export const PrizesLeft = styled.div<{ $bgImg: string }>`
   width: 34.25rem;
@@ -122,6 +148,11 @@ export const PrizesLeft = styled.div<{ $bgImg: string }>`
   flex-shrink: 0;
   background: url("${({ $bgImg }) => $bgImg}") no-repeat center;
   background-size: 100% 100%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 17.625rem;
+  }
 `;
 export const PrizesRight = styled.div`
   display: flex;
@@ -130,6 +161,10 @@ export const PrizesRight = styled.div`
 
   .runners {
     margin-top: 6rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -142,11 +177,17 @@ export const PrizeCardWrapper = styled.div`
     border: 1px solid #903aff;
     background: rgba(144, 58, 255, 0.12);
   }
+
+  @media (max-width: 768px) {
+    gap: 3rem;
+  }
 `;
 
 export const MedalWrapper = styled.div<{
   $width: string;
   $height: string;
+  $widthSmall: string;
+  $heightSmall: string;
   $bgImg: string;
 }>`
   width: ${({ $width }) => $width};
@@ -154,6 +195,11 @@ export const MedalWrapper = styled.div<{
   background: url("${({ $bgImg }) => $bgImg}") no-repeat center;
   background-size: 100% 100%;
   z-index: 2;
+
+  @media (max-width: 768px) {
+    width: ${({ $widthSmall }) => $widthSmall};
+    height: ${({ $heightSmall }) => $heightSmall};
+  }
 `;
 
 export const PrizeDetails = styled.div<{
@@ -189,5 +235,19 @@ export const PrizeDetails = styled.div<{
     font-size: 2rem;
     font-weight: 700;
     line-height: 216.4%; /* 4.328rem */
+  }
+
+  @media (max-width: 768px) {
+    width: 5.62544rem;
+    height: 7.85444rem;
+
+    .reward {
+      font-size: 0.875rem;
+    }
+
+    .position,
+    .runner {
+      font-size: 0.75rem;
+    }
   }
 `;

@@ -11,10 +11,14 @@ const PrizeCard: React.FC<PrizeCardProps & { index: number }> = ({
   borderColor,
   fontSize,
   index,
+  smallWidth,
+  smallHeight,
 }) => {
   return (
     <PrizeCardWrapper className={index !== 1 ? "runners" : ""}>
       <MedalWrapper
+        $widthSmall={smallWidth}
+        $heightSmall={smallHeight}
         $bgImg={bgImage}
         $height={height}
         $width={width}

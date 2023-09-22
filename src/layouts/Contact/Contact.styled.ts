@@ -57,6 +57,12 @@ export const ContactWrapper = styled.div`
     left: 84.9rem;
     top: 42.2rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding: 2rem;
+    width: 100vw;
+  }
 `;
 
 export const ContactLeft = styled.div`
@@ -104,6 +110,15 @@ export const ContactLeft = styled.div`
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0.87rem;
+  }
+
+  @media (max-width: 768px) {
+    .line1 {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 0.75rem;
+    }
   }
 `;
 
@@ -184,6 +199,26 @@ export const ContactForm = styled.form`
     border: 1px solid transparent;
     color: #fff;
     margin: 1.94rem auto 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-radius: 0.75rem;
+    box-shadow: none;
+    height: fit-content;
+    gap: 1.56rem;
+
+    button {
+      margin: 0;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      margin: 0;
+    }
   }
 `;
 

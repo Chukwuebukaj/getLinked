@@ -36,6 +36,7 @@ const Register = () => {
     privacy_poclicy_accepted: false,
   });
   const [successful, setSuccessful] = useState<boolean>(false);
+  const [buttonText, setButtonText] = useState<string>("Register Now");
 
   const handleInputChange = (
     event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
@@ -75,13 +76,16 @@ const Register = () => {
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!userDetails.privacy_poclicy_accepted) {
-      toast.warn("👈🏻 kindly accept terms and conditions", {
+      toast.warn("kindly accept terms and conditions", {
         style: {
-          marginTop: "32rem",
+          marginTop: window.innerWidth <= 768 ? "74vh" : "32rem",
+          width: window.innerWidth <= 768 ? "80vw" : "",
+          marginLeft: "auto",
           backgroundColor: "#140D27",
           color: "#fff",
           border: "1px solid #D434FE",
-          fontSize: "0.875rem",
+          fontSize: window.innerWidth <= 768 ? "0.875rem" : "0.875rem",
+          padding: "0",
         },
       });
       return;
@@ -104,6 +108,25 @@ const Register = () => {
 
   useEffect(() => {
     getCategories();
+    const handleResize = () => {
+      // Check the screen width and set the button text accordingly
+      if (window.innerWidth <= 768) {
+        setButtonText("Submit");
+      } else {
+        setButtonText("Register Now");
+      }
+    };
+
+    // Add a resize event listener to update the button text on window resize
+    window.addEventListener("resize", handleResize);
+
+    // Initial update when the component mounts
+    handleResize();
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
 
   return (
@@ -127,7 +150,12 @@ const Register = () => {
             <p className="create">CREATE YOUR ACCOUNT</p>
             <FormWrapper>
               {formDetails.map((detail, index) => (
-                <label key={index}>
+                <label
+                  key={index}
+                  className={
+                    index === 4 ? "category" : index === 5 ? "group-size" : ""
+                  }
+                >
                   <span>{detail.title}</span>
                   {index > 3 ? (
                     <Select
@@ -171,7 +199,7 @@ const Register = () => {
                   policy
                 </p>
               </div>
-              <Button children="Register Now" type="submit" />
+              <Button children={buttonText} type="submit" />
             </FormWrapper>
           </RegisterForm>
           <PurpleOverLay className={"overlay1"} />

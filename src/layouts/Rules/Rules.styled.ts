@@ -7,7 +7,7 @@ export const RulesWrapper = styled.div`
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   z-index: 2;
   overflow: hidden;
-  position:relative;
+  position: relative;
 
   .grey {
     width: 1.625rem;
@@ -22,8 +22,14 @@ export const RulesWrapper = styled.div`
     height: 2rem;
     flex-shrink: 0;
     left: 46.31rem;
-    top:29.06rem;
+    top: 29.06rem;
+  }
 
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 0.62rem;
+    padding: 0;
+    width: 100vw;
   }
 `;
 export const RulesLeft = styled.div`
@@ -47,6 +53,18 @@ export const RulesLeft = styled.div`
     font-weight: 400;
     line-height: 1.71875rem; /* 196.429% */
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 0 2.5rem 2.5rem 2.5rem;
+    span {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 0.8125rem;
+    }
+  }
 `;
 export const RulesRight = styled.div<{ $bgImg: string }>`
   background: url("${({ $bgImg }) => $bgImg}") no-repeat center;
@@ -54,4 +72,9 @@ export const RulesRight = styled.div<{ $bgImg: string }>`
   width: 41.5rem;
   height: 41.5rem;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 23.875rem;
+  }
 `;

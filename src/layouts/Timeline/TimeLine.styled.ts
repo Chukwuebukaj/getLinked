@@ -8,7 +8,7 @@ export const TimelineWrapper = styled.section`
   padding: 4.5rem 4.69rem 2.62rem 4.69rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   position: relative;
-  height:auto;
+  height: auto;
 
   .white,
   .grey {
@@ -34,6 +34,11 @@ export const TimelineWrapper = styled.section`
     left: 11.06rem;
     top: 77.75rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 3rem;
+    gap: 3.5rem;
+  }
 `;
 
 export const TimeLineTop = styled.div`
@@ -54,12 +59,19 @@ export const TimeLineTop = styled.div`
     font-weight: 400;
     line-height: 172.4%; /* 1.5085rem */
   }
+
+  @media (max-width: 768px) {
+    span {
+      font-size: 1.25rem;
+    }
+  }
 `;
 
 export const TimeLineBody = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 5.44rem;
+  position: relative;
 
   li {
     display: flex;
@@ -104,7 +116,7 @@ export const TimeLineBody = styled.ul`
     height: 5.375rem;
     background: #d434fe;
     position: absolute;
-    left: 45rem;
+    left: 40.2rem;
     margin-top: -10rem;
   }
 
@@ -124,5 +136,67 @@ export const TimeLineBody = styled.ul`
     font-size: 1rem;
     font-weight: 400;
     line-height: 170.9%; /* 1.709rem */
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 2.5rem;
+
+    li {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: flex-start;
+    }
+
+    span,
+    p {
+      font-size: 0.75rem;
+      text-align: left;
+    }
+
+    .line,
+    .center {
+      position: absolute;
+    }
+
+    .line,
+    .first-line {
+      width: 0.125rem;
+      height: 4.8125rem;
+      left: -1rem;
+      margin-top: -2rem;
+    }
+
+    .first-line {
+      margin-top: 0;
+    }
+
+    .odd {
+      margin-top: -4rem;
+      margin-bottom: 2rem;
+    }
+
+    .center {
+      width: 1.2075rem;
+      height: 1.2075rem;
+      font-size: 0.75rem;
+      left: -1.5rem;
+      margin-top: 3.8rem;
+    }
+
+    .left,
+    .right {
+      width: 100%;
+      align-items: flex-start;
+    }
+
+    .reverse {
+      flex-direction: column-reverse;
+    }
+
+    .first {
+      margin-top: 5rem;
+    }
   }
 `;

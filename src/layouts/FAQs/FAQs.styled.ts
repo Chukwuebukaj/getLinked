@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FAQWrapper = styled.section`
   display: flex;
-  gap: 1.56;
+  gap: 1.56rem;
   padding: 8rem 6.31rem 3.94rem 13.44rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   align-items: center;
@@ -25,7 +25,7 @@ export const FAQWrapper = styled.section`
     left: 67rem;
   }
 
-  .purple {
+  .purple-icon {
     width: 1.875rem;
     height: 2.25rem;
     flex-shrink: 0;
@@ -61,6 +61,13 @@ export const FAQWrapper = styled.section`
     left: 76.62rem;
     top: 53rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    gap: 5.38rem;
+  }
 `;
 
 export const FAQLeft = styled.div`
@@ -90,6 +97,19 @@ export const FAQLeft = styled.div`
       font-weight: 700;
     }
   }
+
+  @media (max-width: 768px) {
+    align-items: center;
+
+    .top {
+      font-size: 1.25rem;
+    }
+
+    .got-answers {
+      text-align: center;
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 export const FAQRight = styled.div<{ $bgImg: string }>`
@@ -98,6 +118,11 @@ export const FAQRight = styled.div<{ $bgImg: string }>`
   flex-shrink: 0;
   background: url("${({ $bgImg }) => $bgImg}") no-repeat center;
   background-size: 100% 100%;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 20.4375rem;
+  }
 `;
 
 export const QuestionsList = styled.ul`
@@ -129,5 +154,15 @@ export const QuestionsList = styled.ul`
 
   .open {
     color: #d434fe;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 0.71rem;
+
+    li {
+      font-size: 0.75rem;
+      line-height: 1.28125rem; /* 170.833% */
+    }
   }
 `;

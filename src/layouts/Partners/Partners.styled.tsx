@@ -22,7 +22,7 @@ export const PartnersWrapper = styled.section`
   .overlay-ps1 {
     left: 55rem;
     top: 30rem;
-    z-index:-1;
+    z-index: -1;
   }
 
   .purple {
@@ -48,6 +48,10 @@ export const PartnersWrapper = styled.section`
     left: 50.5rem;
     top: 47.94rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 2.56rem 1.8rem;
+  }
 `;
 
 export const PartnersTop = styled.div`
@@ -69,6 +73,19 @@ export const PartnersTop = styled.div`
     font-weight: 400;
     line-height: 1.71875rem; /* 196.429% */
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 0.31rem;
+
+    span {
+      font-size: 1.25rem;
+    }
+
+    p {
+      font-size: 0.75rem;
+    }
+  }
 `;
 export const PartnersList = styled.ul`
   display: flex;
@@ -77,13 +94,13 @@ export const PartnersList = styled.ul`
   justify-content: space-between;
   gap: 6.66rem;
   align-items: center;
-
   width: 78.4375rem;
   height: 35rem;
   flex-shrink: 0;
   border-radius: 0.3125rem;
   border: 1px solid #d434fe;
   background: rgba(255, 255, 255, 0.01);
+  position: relative;
 
   .pay-box {
     font-family: "Typo Hoop Demo", sans-serif;
@@ -125,27 +142,86 @@ export const PartnersList = styled.ul`
   }
 
   .h2 {
-    left: 37.5rem;
+    left: 30.99rem;
   }
   .h3 {
-    left: 58.5rem;
+    left: 52.25rem;
   }
 
   .v1 {
-    left: 35.3rem;
+    left: 29.24rem;
     margin-top: -10rem;
   }
   .v2 {
-    left: 35.3rem;
+    left: 29.24rem;
     margin-top: 18rem;
   }
   .v3 {
-    left: 56rem;
+    left: 49.32rem;
     margin-top: -10rem;
   }
   .v4 {
-    left: 56rem;
+    left: 49.32rem;
     margin-top: 18rem;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 9.28688rem;
+    padding: 2.5rem;
+    gap: 1rem 0.5rem;
+
+    .pay-box {
+      font-size: 0.75rem;
+    }
+
+    .vp {
+      justify-content: center;
+      line-height: normal;
+      gap: 0;
+
+      p {
+        font-size: 0.75rem;
+
+        span {
+          font-size: 0.75rem;
+        }
+      }
+
+      .tiny {
+        font-size: 0.25rem;
+      }
+    }
+
+    .h1 {
+      top: 1rem;
+    }
+
+    .h2 {
+      left: 7.8rem;
+      top: 1rem;
+    }
+    .h3 {
+      left: 13rem;
+      top: 1rem;
+    }
+
+    .v1 {
+      left: 7rem;
+      margin-top: -2rem;
+    }
+    .v2 {
+      left: 7rem;
+      margin-top: 4rem;
+    }
+    .v3 {
+      left: 12.5rem;
+      margin-top: -2rem;
+    }
+    .v4 {
+      left: 12.5rem;
+      margin-top: 4rem;
+    }
   }
 `;
 
@@ -154,6 +230,11 @@ export const ListItem = styled.li<{ $bgImg: string }>`
   background-size: contain;
   width: 13.32431rem;
   height: 7.12163rem;
+
+  @media (max-width: 768px) {
+    width: 4.3125rem;
+    height: 2rem;
+  }
 `;
 
 export const Horizontal = styled.div`
@@ -162,10 +243,20 @@ export const Horizontal = styled.div`
   background: #d434fe;
   position: absolute;
   margin-top: 4rem;
+
+  @media (max-width: 768px) {
+    width: 4.26694rem;
+    height: 0.125rem;
+  }
 `;
 export const Vertical = styled.div`
   width: 0.25rem;
   height: 7.02975rem;
   background: #d434fe;
   position: absolute;
+
+  @media (max-width: 768px) {
+    width: 0.125rem;
+    height: 1.86525rem;
+  }
 `;

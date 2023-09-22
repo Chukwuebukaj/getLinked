@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const HeaderWrapper = styled.header`
+export const HeaderWrapper = styled.header<{ $displayLinks: string }>`
   display: flex;
   justify-content: space-between;
   height: 3.3125rem;
@@ -8,8 +8,8 @@ export const HeaderWrapper = styled.header`
   padding: 4.94rem 8rem 2.63rem 8rem;
   border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.18);
   z-index: 12;
-  position:fixed;
-  width:100vw;
+  position: fixed;
+  width: 100vw;
   backdrop-filter: blur(30px);
 
   .p {
@@ -26,6 +26,25 @@ export const HeaderWrapper = styled.header`
 
   .text-wrapper-7 {
     color: #d434fe;
+  }
+
+  .menu-btn,
+  close-btn {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1.75rem 3.38rem;
+
+    nav {
+      display: ${({ $displayLinks }) => $displayLinks};
+    }
+
+    .menu-btn {
+      display: flex;
+      background: transparent;
+      border: solid transparent;
+    }
   }
 `;
 
@@ -86,5 +105,57 @@ export const LinkList = styled.ul`
     background: transparent;
     border-radius: 0.25rem;
     border: 1px solid #ff29b9;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    width: 100vw;
+    height: 30.75rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid rgba(255, 255, 255, 0.04);
+    background: #150e28;
+    backdrop-filter: blur(30px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: flex-start;
+    padding: 0 2.94rem;
+    justify-content: center;
+    gap: 2rem;
+
+    button {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .close-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: transparent;
+      width: 1.4375rem;
+      height: 1.4375rem;
+      position: relative;
+      margin-left: auto;
+
+      .close-icon {
+        width: 1.4375rem;
+        height: 1.4375rem;
+      }
+
+      svg {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+      }
+    }
+
+    a {
+      font-size: 1.125rem;
+      font-weight: 500;
+      letter-spacing: -0.0625rem;
+      font-family: "Inter", sans-serif;
+    }
   }
 `;

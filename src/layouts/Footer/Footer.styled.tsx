@@ -45,11 +45,20 @@ export const FooterWrapper = styled.footer`
     left: 56rem;
     top: 6.19rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 3.19rem;
+  }
 `;
 
 export const FooterBody = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 `;
 
 export const First = styled.div`
@@ -82,6 +91,13 @@ export const First = styled.div`
       font-size: 1rem;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    .tu-pp {
+      margin-top: 2.44rem;
+    }
+  }
 `;
 export const Second = styled.div`
   display: flex;
@@ -98,6 +114,9 @@ export const Second = styled.div`
     font-size: 0.75rem;
     font-weight: 400;
     line-height: normal;
+  }
+
+  @media (max-width: 768px) {
   }
 `;
 
@@ -118,12 +137,18 @@ export const UsefulLinks = styled.ul`
       -webkit-text-fill-color: transparent;
     }
   }
+
+  @media (max-width: 768px) {
+  }
 `;
 
 export const SocialMedia = styled.div`
   display: flex;
   gap: 1rem;
   margin-top: 1.12rem;
+
+  @media (max-width: 768px) {
+  }
 `;
 export const SocialMediaIcons = styled.div`
   display: flex;
@@ -136,6 +161,9 @@ export const SocialMediaIcons = styled.div`
     &:hover {
       color: #d434fe;
     }
+  }
+
+  @media (max-width: 768px) {
   }
 `;
 
@@ -151,6 +179,9 @@ export const ContactList = styled.ul`
     font-weight: 400;
     line-height: normal;
   }
+
+  @media (max-width: 768px) {
+  }
 `;
 export const Third = styled.div`
   display: flex;
@@ -162,5 +193,8 @@ export const Third = styled.div`
     font-size: 0.875rem;
     font-weight: 600;
     line-height: 172.4%; /* 1.5085rem */
+  }
+
+  @media (max-width: 768px) {
   }
 `;

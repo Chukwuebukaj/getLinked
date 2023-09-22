@@ -32,6 +32,13 @@ export const IntroWrapper = styled.section`
     left: 43.06rem;
     top: 30.61rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 2rem;
+    width: 100vw;
+    gap: 3.62rem;
+  }
 `;
 
 export const IntroLeft = styled.div<{ $bgImg: string }>`
@@ -52,6 +59,19 @@ export const IntroLeft = styled.div<{ $bgImg: string }>`
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 122.5%; /* 1.8375rem */
+  }
+
+  @media (max-width: 768px) {
+    width: 16.50025rem;
+    height: 16.0625rem;
+    flex-shrink: 0;
+    margin: 0 auto;
+
+    p {
+      font-size: 0.875rem;
+      width: 4.87744rem;
+      height: 2.01213rem;
+    }
   }
 `;
 export const IntroRight = styled.div`
@@ -78,5 +98,19 @@ export const IntroRight = styled.div`
     font-size: 0.875rem;
     font-weight: 400;
     line-height: 1.71875rem; /* 196.429% */
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    text-align: center;
+    justify-content: flex-start;
+    height: max-content;
+
+    span {
+      font-size: 1.25rem;
+    }
+    p {
+      font-size: 0.8125rem;
+    }
   }
 `;

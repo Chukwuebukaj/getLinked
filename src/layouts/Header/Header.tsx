@@ -3,18 +3,29 @@ import Button from "../../components/Button";
 import { HeaderWrapper, LinkList } from "./Header.styled";
 import Logo from "../../components/Logo";
 import { Link, useLocation } from "react-router-dom";
+import MenuIcon from "../../components/MenuIcon";
+import { AiOutlineClose } from "react-icons/ai";
+import { useState } from "react";
+import CloseButton from "../../components/CloseButton";
 
 const Header = () => {
   const location = useLocation();
+  const [display, setDisplay] = useState<string>("none");
 
   return (
-    <HeaderWrapper>
+    <HeaderWrapper $displayLinks={display}>
       <Logo />
       <nav>
         <LinkList>
+          {display === "flex" && (
+            <Button onClick={() => setDisplay("none")} className="close-btn">
+              <AiOutlineClose className="close-icon" />
+              <CloseButton />
+            </Button>
+          )}
           {links.map((link, index) =>
             index < 4 ? (
-              <li key={index}>
+              <li key={index} onClick={() => setDisplay("none")}>
                 {index > 2 ? (
                   <Link
                     to={link.path}
@@ -36,7 +47,11 @@ const Header = () => {
                 )}
               </li>
             ) : (
-              <Link to={link.path} key={index}>
+              <Link
+                to={link.path}
+                key={index}
+                onClick={() => setDisplay("none")}
+              >
                 <Button
                   children={link.title}
                   className={
@@ -48,6 +63,11 @@ const Header = () => {
           )}
         </LinkList>
       </nav>
+      {display === "none" && (
+        <Button onClick={() => setDisplay("flex")} className="menu-btn">
+          <MenuIcon />
+        </Button>
+      )}
     </HeaderWrapper>
   );
 };
