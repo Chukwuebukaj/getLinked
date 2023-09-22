@@ -28,3 +28,6 @@ a button:hover {
   border: 1px solid #ff29b9;
 }
 
+img {
+  z-index: -1;
+}
