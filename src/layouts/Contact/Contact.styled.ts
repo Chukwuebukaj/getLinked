@@ -183,7 +183,7 @@ export const ContactForm = styled.form`
     flex-shrink: 0;
     border-radius: 0.25rem;
     border: 1px solid #fff;
-    background: rgba(21, 14, 40, 0.93);
+    background: rgba(21, 14, 40);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #fff;
     margin-top: 2.44rem;
@@ -205,7 +205,7 @@ export const ContactForm = styled.form`
     flex-shrink: 0;
     border-radius: 0.25rem;
     border: 1px solid #fff;
-    background: rgba(21, 14, 40, 0.93);
+    background: rgba(21, 14, 40);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     color: #fff;
     padding: 0.8rem 1.81rem;
