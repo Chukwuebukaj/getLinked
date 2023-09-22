@@ -123,7 +123,7 @@ export const RegisterForm = styled.form`
   width: 50%;
   flex-shrink: 0;
   border-radius: 0.75rem;
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(21, 14, 40, 0.93);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 3rem;
 
@@ -168,6 +168,7 @@ export const RegisterForm = styled.form`
     width: 100%;
     padding: 0;
     background: transparent;
+    box-shadow:none;
 
     .part {
       font-size: 0.75rem;
@@ -197,6 +198,7 @@ export const FormWrapper = styled.div`
     flex-direction: column;
     width: 48%;
     gap: 0.69rem;
+    background: rgba(21, 14, 40, 0.93);
   }
 
   input,
