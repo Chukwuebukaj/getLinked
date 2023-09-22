@@ -73,6 +73,20 @@ export const PrivacyWrapper = styled.section`
     left: 6.25rem;
     top: 52.38rem;
   }
+
+  @media (max-width: 768px) {
+    padding: 3rem;
+    flex-direction: column;
+    gap: 9rem;
+    align-items: center;
+
+    .privacy-image {
+      width: 15.5625rem;
+      height: 19.4375rem;
+      left: 4.56rem;
+      top: 59.94rem;
+    }
+  }
 `;
 export const PrivacyLeft = styled.div`
   display: flex;
@@ -88,6 +102,11 @@ export const PrivacyLeft = styled.div`
     top: 47.62rem;
     left: -12rem;
   }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    width: 100%;
+  }
 `;
 export const PrivacyRight = styled.div`
   background: url("${bgImage}") no-repeat center;
@@ -95,7 +114,13 @@ export const PrivacyRight = styled.div`
   width: 34.9375rem;
   height: 46.8125rem;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 21.9375rem;
+  }
 `;
+
 export const Top = styled.div`
   display: flex;
   flex-direction: column;
@@ -126,7 +151,20 @@ export const Top = styled.div`
     font-weight: 400;
     line-height: 188.4%; /* 1.6485rem */
   }
+
+  @media (max-width: 768px) {
+    gap: 1rem;
+    .privacy {
+      font-size: 1.25rem;
+    }
+
+    p,
+    .last-updated {
+      font-size: 0.75rem;
+    }
+  }
 `;
+
 export const Bottom = styled.div`
   display: flex;
   flex-direction: column;
@@ -180,6 +218,26 @@ export const Bottom = styled.div`
     color: #d434fe;
     font-size: 1rem;
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 2rem 0.8rem;
+
+    p {
+      font-size: 0.75rem;
+    }
+
+    span {
+      font-size: 0.8125rem;
+    }
+
+    button {
+      width: 6.02188rem;
+      height: 1.95913rem;
+      flex-shrink: 0;
+      font-size: 0.75rem;
+    }
+  }
 `;
 
 export const Terms = styled.ul`
@@ -196,6 +254,12 @@ export const Terms = styled.ul`
       width: 1.0625rem;
       height: 1.0625rem;
       flex-shrink: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    li {
+      text-align: left;
     }
   }
 `;

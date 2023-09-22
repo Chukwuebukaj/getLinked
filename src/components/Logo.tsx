@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Logo = () => {
   return (
-    <Link to={"/"} style={{color:'inherit'}}>
+    <Link to={"/"} style={{ color: "inherit" }}>
       <LogoWrapper>
         get
         <span>linked</span>
@@ -24,5 +24,9 @@ const LogoWrapper = styled.p`
 
   span {
     color: #d434fe;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9375rem;
   }
 `;

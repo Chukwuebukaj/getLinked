@@ -41,7 +41,7 @@ const LandingPageWrapper = styled.div`
   width: 100vw;
   position: relative;
   z-index: 2;
-  overflow-x:hidden;
+  overflow-x: hidden;
 
   .overlay1 {
     width: 67.875rem;
@@ -72,5 +72,15 @@ const LandingPageWrapper = styled.div`
     left: 60rem;
     background-blend-mode: hard-light;
     z-index: -1;
+  }
+
+  @media (max-width: 768px) {
+    .overlay1 {
+      width: 24.75rem;
+      height: 27.625rem;
+      flex-shrink: 0;
+      left: -0.4rem;
+      top: 0.13rem;
+    }
   }
 `;

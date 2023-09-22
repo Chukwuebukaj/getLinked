@@ -37,7 +37,7 @@ const Hero = () => {
           <p className="get-linked">
             Hackathon <span className="purple">1.0</span>
           </p>
-          <p>
+          <p className="participate">
             Participate in getlinked tech Hackathon 2023 stand a chance to win a
             Big prize
           </p>

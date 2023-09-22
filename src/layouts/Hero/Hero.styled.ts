@@ -79,6 +79,41 @@ export const HeroWrapper = styled.div`
     height: 2rem;
     flex-shrink: 0;
   }
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+    gap: 3.62rem;
+    width:100vw;
+
+    .hero-top {
+      font-size: 1rem;
+      width: 100%;
+      line-height: normal;
+      text-align: center;
+    }
+
+    .curvedLine {
+      left: 14.6rem;
+      top: 1.1rem;
+      width: 7.1875rem;
+      height: 0.4375rem;
+      flex-shrink: 0;
+    }
+
+    .metrix {
+      left: 0;
+      bottom: 0;
+    }
+  }
+`;
+
+export const HeroBody = styled.div`
+  display: flex;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Info = styled.div`
@@ -141,11 +176,37 @@ export const Info = styled.div`
       line-height: 133%; /* 1.16375rem */
     }
   }
+
+  @media (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    width:100vw;
+
+    .get-linked {
+      font-size: 2rem;
+    }
+    .participate {
+      font-size: 0.8125rem;
+      line-height: 166%;
+    }
+
+    button {
+      width: 9.5rem;
+      height: 2.92731rem;
+      flex-shrink: 0;
+      margin-top: 1.5rem;
+    }
+
+    .count-down {
+      margin-top: 0.89rem;
+
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
 `;
 
-export const HeroBody = styled.div`
-  display: flex;
-`;
 export const HeroRight = styled.div`
   background: url("${bgImage}") no-repeat center;
   background-size: 100% 100%;
@@ -161,6 +222,14 @@ export const HeroRight = styled.div`
   width: 53.59vw;
   height: 46.28vw;
   flex-shrink: 0;
+
+  @media (max-width: 768px) {
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 22.64969rem;
+    position: relative;
+  }
 `;
 export const OverLay = styled.div`
   background: url("${overlay}") no-repeat center;
@@ -169,4 +238,10 @@ export const OverLay = styled.div`
   height: 41.49vw;
   flex-shrink: 0;
   background-blend-mode: hard-light;
+
+  @media (max-width: 768px) {
+    width: 21.12919rem;
+    height: 20.30556rem;
+    flex-shrink: 0;
+  }
 `;

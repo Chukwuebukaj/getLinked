@@ -7,6 +7,8 @@ export interface PrizeCardProps {
   reward: string;
   width: string;
   height: string;
+  smallWidth: string;
+  smallHeight: string;
   bgImage: string;
   bgColor: string;
   borderColor: string;
@@ -22,6 +24,8 @@ export const prizeCardData: PrizeCardProps[] = [
     reward: "300,000",
     width: "11.1875rem",
     height: "11.25rem",
+    smallWidth: "4.74981rem",
+    smallHeight: "4.77631rem",
     bgImage: silver,
     bgColor: "rgba(212, 52, 254, 0.12)",
     borderColor: "#D434FE",
@@ -32,6 +36,8 @@ export const prizeCardData: PrizeCardProps[] = [
     reward: "400,000",
     width: "18.5rem",
     height: "18.5rem",
+    smallWidth: "7.85444rem",
+    smallHeight: "7.85444rem",
     bgImage: gold,
     bgColor: "rgba(144, 58, 255, 0.12)",
     borderColor: "#903AFF",
@@ -42,6 +48,8 @@ export const prizeCardData: PrizeCardProps[] = [
     reward: "150,000",
     width: "11.1875rem",
     height: "11.25rem",
+    smallWidth: "4.74981rem",
+    smallHeight: "4.77631rem",
     bgImage: bronze,
     bgColor: "rgba(212, 52, 254, 0.12)",
     borderColor: "#D434FE",

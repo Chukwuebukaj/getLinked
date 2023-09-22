@@ -43,6 +43,8 @@ const Prizes = () => {
               borderColor={data.borderColor}
               fontSize={data.fontSize}
               index={index}
+              smallWidth={data.smallWidth}
+              smallHeight={data.smallHeight}
             />
           ))}
           <PurpleOverLay className={"overlayP2"} />
