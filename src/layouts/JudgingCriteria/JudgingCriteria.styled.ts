@@ -52,6 +52,27 @@ export const JCWrapper = styled.section`
     flex-direction: column;
     gap: 0;
     padding: 4.62rem 1.81rem 3.67rem 1.81rem;
+
+    .purple-star {
+      width: 0.8125rem;
+      height: 1.0625rem;
+      left: 10.8rem;
+      top: 0.94rem;
+    }
+
+    .grey {
+      left: 13.81rem;
+      top: 13.3rem;
+      width: 0.75rem;
+      height: 0.875rem;
+    }
+
+    .white {
+      left: 20.6rem;
+      top: 82.38rem;
+      width: 0.625rem;
+      height: 0.75rem;
+    }
   }
 `;
 
@@ -74,6 +95,13 @@ export const JCLeft = styled.div<{ $bgImg: string }>`
   @media (max-width: 768px) {
     width: 100vw;
     height: 17.1875rem;
+
+    .overlay {
+      width: 25.25rem;
+      height: 27.75rem;
+      left: -4rem;
+      top: 0;
+    }
   }
 `;
 

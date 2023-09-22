@@ -70,6 +70,41 @@ export const RegisterWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 3rem;
+    top: 1.5rem;
+
+    .overlay1 {
+      top: 2rem;
+      left: -4rem;
+
+      width: 24.75rem;
+      height: 27.625rem;
+      flex-shrink: 0;
+    }
+
+    .grey1 {
+      width: 0.875rem;
+      height: 1.125rem;
+      left: 2.25rem;
+      top: 20.88rem;
+    }
+
+    .pink {
+      width: 0.875rem;
+      height: 0.8125rem;
+      top: 10.06rem;
+      left: 19.9rem;
+    }
+
+    .purple {
+      width: 0.5625rem;
+      height: 0.625rem;
+      top: 49.38rem;
+      left: 20.9rem;
+    }
+
+    .grey2 {
+      display: none;
+    }
   }
 `;
 export const RegisterLeft = styled.div`
@@ -233,12 +268,12 @@ export const FormWrapper = styled.div`
 
     .category {
       grid-row: 5 / span 1;
-      width: 9.6875rem;
+      width: 60%;
     }
 
     .group-size {
       grid-row: 5 / span 1;
-      width: 5.4375rem;
+      width: 30%;
       margin-left: auto;
     }
 

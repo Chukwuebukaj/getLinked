@@ -14,6 +14,7 @@ const Rules = () => {
       <RulesRight $bgImg={bgImage}></RulesRight>
       <GreyStarSmall className={"grey"}/>
       <WhiteStarSmall className={"white"}/>
+      <WhiteStarSmall className={"white1"}/>
     </RulesWrapper>
   );
 };

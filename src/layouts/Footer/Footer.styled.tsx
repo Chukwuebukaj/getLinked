@@ -48,6 +48,34 @@ export const FooterWrapper = styled.footer`
 
   @media (max-width: 768px) {
     padding: 3.19rem;
+
+    .white1 {
+      width: 0.5625rem;
+      height: 0.625rem;
+      top: 8rem;
+      left: 2.25rem;
+    }
+
+    .white2 {
+      width: 0.9375rem;
+      height: 1.125rem;
+      left: 19.1rem;
+      top: 36.69rem;
+    }
+
+    .pink {
+      width: 0.4375rem;
+      height: 0.5rem;
+      left: 8.56rem;
+      top: 42.69rem;
+    }
+
+    .grey {
+      width: 0.9375rem;
+      height: 1.125rem;
+      left: 12.6rem;
+      top: 23rem;
+    }
   }
 `;
 

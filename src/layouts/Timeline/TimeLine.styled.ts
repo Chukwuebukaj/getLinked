@@ -38,6 +38,29 @@ export const TimelineWrapper = styled.section`
   @media (max-width: 768px) {
     padding: 3rem;
     gap: 3.5rem;
+
+    .white,
+    .grey {
+      width: 0.625rem;
+      height: 0.75rem;
+    }
+
+    .purple {
+      width: 0.875rem;
+      height: 1rem;
+      left: 5.13rem;
+      top: 8.75rem;
+    }
+
+    .white {
+      left: 17.8rem;
+      top: 32.5rem;
+    }
+
+    .grey {
+      left: 1.38rem;
+      top: 59.69rem;
+    }
   }
 `;
 

@@ -67,6 +67,59 @@ export const FAQWrapper = styled.section`
     align-items: center;
     padding: 2rem;
     gap: 5.38rem;
+
+    .purple-icon {
+      width: 1.125rem;
+      height: 1.375rem;
+      left: 3.69rem;
+      top: 2.94rem;
+    }
+
+    .pink {
+      width: 0.625rem;
+      height: 0.625rem;
+      left: 11.6rem;
+      top: 38.63rem;
+    }
+
+    .pink1 {
+      width: 0.4375rem;
+      height: 0.5625rem;
+      left: 6.13rem;
+      top: 45.5rem;
+    }
+
+    .grey {
+      width: 0.625rem;
+      height: 0.75rem;
+      left: 3.13rem;
+      top: 49.13rem;
+    }
+
+    .white {
+      width: 1rem;
+      height: 1.25rem;
+      left: 17.6rem;
+      top: 58.75rem;
+    }
+
+    .question1,
+    .question3 {
+      top: 39.25rem;
+    }
+
+    .question1 {
+      left: 4.81rem;
+    }
+
+    .question2 {
+      left: 8.81rem;
+      top: 37rem;
+    }
+
+    .question3 {
+      left: 13.69rem;
+    }
   }
 `;
 

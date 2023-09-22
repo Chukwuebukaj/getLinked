@@ -51,6 +51,40 @@ export const PartnersWrapper = styled.section`
 
   @media (max-width: 768px) {
     padding: 2.56rem 1.8rem;
+
+    .overlay-ps {
+      width: 17.875rem;
+      height: 22.75rem;
+      top: -4rem;
+      left: -6rem;
+    }
+
+    .overlay-ps1 {
+      left: 13rem;
+      top: 18rem;
+      z-index: -1;
+    }
+
+    .purple {
+      width: 0.5rem;
+      height: 0.625rem;
+      left: 3.25rem;
+      top: 13.81rem;
+    }
+
+    .pink {
+      width: 0.4375rem;
+      height: 0.4375rem;
+      top: 17.62rem;
+      left: 13.3rem;
+    }
+
+    .white {
+      width: 0.625rem;
+      height: 0.75rem;
+      left: 19.3rem;
+      top: 22.06rem;
+    }
   }
 `;
 

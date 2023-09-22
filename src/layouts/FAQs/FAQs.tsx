@@ -49,17 +49,17 @@ const FAQs = () => {
       </FAQLeft>
       <FAQRight $bgImg={bgImage}></FAQRight>
       <QuestionMark
-        fontSize={"6rem"}
+        fontSize={window.innerWidth <= 768 ? "2.5rem" : "6rem"}
         borderColor={"#A866FD"}
         className={"question1"}
       />
       <QuestionMark
-        fontSize={"8rem"}
+        fontSize={window.innerWidth <= 768 ? "4rem" : "8rem"}
         borderColor={"#D434FE"}
         className={"question2"}
       />
       <QuestionMark
-        fontSize={"6rem"}
+        fontSize={window.innerWidth <= 768 ? "2.5rem" : "6rem"}
         borderColor={"#A866FD"}
         className={"question3"}
       />

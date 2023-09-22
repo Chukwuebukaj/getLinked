@@ -92,6 +92,63 @@ export const PrizesWrapper = styled.section`
   @media (max-width: 768px) {
     width: 100vw;
     padding: 4rem 2rem;
+
+    .overlayP1 {
+      left: -12rem;
+      top: 8rem;
+    }
+
+    .overlayP2 {
+      top: 0;
+      left: 4rem;
+    }
+
+    .white1,
+    .white2,
+    .white3,
+    .grey1,
+    .grey2 {
+      width: 0.625rem;
+      height: 0.75rem;
+    }
+
+    .pink1,
+    .pink2 {
+      width: 0.4375rem;
+      height: 0.5625rem;
+    }
+
+    .pink1 {
+      left: 3.56rem;
+      top: 2.88rem;
+    }
+
+    .pink2 {
+      left: 17.1rem;
+      top: 5.69rem;
+      z-index: -1;
+    }
+
+    .white1 {
+      left: 4.25rem;
+      top: 30.75rem;
+    }
+
+    .white2 {
+      left: 19.9rem;
+      top: 35.12rem;
+    }
+
+    .white3,
+    .white4 {
+      display: none;
+    }
+
+    .grey1 {
+      left: 15.2rem;
+      top: 50.31rem;
+      z-index: -1;
+    }
   }
 `;
 

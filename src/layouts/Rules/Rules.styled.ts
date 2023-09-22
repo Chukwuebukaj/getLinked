@@ -25,11 +25,39 @@ export const RulesWrapper = styled.div`
     top: 29.06rem;
   }
 
+  .white1 {
+    display: none;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column-reverse;
     gap: 0.62rem;
     padding: 0;
     width: 100vw;
+
+    .white1 {
+      display: block;
+      width: 0.625rem;
+      height: 0.75rem;
+      flex-shrink: 0;
+      left: 2.69rem;
+      top: 11.56rem;
+    }
+
+    .grey {
+      width: 0.75rem;
+      height: 0.875rem;
+      left: 21rem;
+      top: 27.62rem;
+    }
+
+    .white {
+      width: 0.625rem;
+      height: 0.75rem;
+      flex-shrink: 0;
+      left: 6.75rem;
+      top: 44.88rem;
+    }
   }
 `;
 export const RulesLeft = styled.div`
