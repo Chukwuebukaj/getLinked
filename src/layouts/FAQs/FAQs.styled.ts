@@ -195,6 +195,7 @@ export const QuestionsList = styled.ul`
     cursor: pointer;
     align-items: center;
     padding-bottom: 0.81rem;
+    background: rgba(21, 14, 40, 0.93);
 
     .minus {
       font-size: 3rem;
