@@ -106,6 +106,10 @@ export const RegisterWrapper = styled.div`
       display: none;
     }
   }
+
+  img {
+    z-index:2;
+  }
 `;
 export const RegisterLeft = styled.div`
   width: 50%;
