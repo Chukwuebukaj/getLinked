@@ -281,6 +281,17 @@ export const OverLay = styled.div`
   flex-shrink: 0;
   background-blend-mode: hard-light;
 
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  animation: rotate 10s linear infinite; /* Rotation animation with a duration of 2 seconds */
+
   @media (max-width: 768px) {
     width: 21.12919rem;
     height: 20.30556rem;
