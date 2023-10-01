@@ -10,6 +10,7 @@ import Partners from "../../layouts/Partners/Partners";
 import Privacy from "../../layouts/Privacy/Privacy";
 import Footer from "../../layouts/Footer/Footer";
 import PurpleOverLay from "../../components/PurpleOverLay";
+import BackToTopBtn from "../../components/BackToTopBtn";
 
 const Landing = () => {
   return (
@@ -28,6 +29,7 @@ const Landing = () => {
       <Partners />
       <Privacy />
       <Footer />
+      <BackToTopBtn />
     </LandingPageWrapper>
   );
 };

@@ -3,6 +3,7 @@ interface ButtonProps {
   className?: string;
   id?: string;
   children?: string | ReactNode;
+  title?: string;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   onClick?: () => void;
@@ -12,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   id,
   children,
   type,
+  title,
   disabled,
   onClick,
 }) => {
@@ -22,6 +24,7 @@ const Button: React.FC<ButtonProps> = ({
       type={type}
       disabled={disabled}
       onClick={onClick}
+      title={title}
     >
       {children}
     </button>

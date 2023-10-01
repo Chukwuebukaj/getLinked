@@ -19,7 +19,7 @@ export const Blast = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={blast}
       alt="tiny"
     />
@@ -63,7 +63,7 @@ export const LightBulb = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={lightBulb}
       alt="tiny"
     />
@@ -85,7 +85,7 @@ export const PinkStarBig = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={pinkStarBig}
       alt="tiny"
     />
@@ -96,7 +96,7 @@ export const PinkStarSmall = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={pinkStarSmall}
       alt="tiny"
     />
@@ -107,7 +107,7 @@ export const GreyStarBig = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={greyStarBig}
       alt="tiny"
     />
@@ -118,7 +118,7 @@ export const GreyStarSmall = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={greyStarSmall}
       alt="tiny"
     />
@@ -129,7 +129,7 @@ export const WhiteStarBig = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={whiteStarBig}
       alt="tiny"
     />
@@ -140,7 +140,7 @@ export const WhiteStarSmall = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={whiteStarSmall}
       alt="tiny"
     />
@@ -151,7 +151,7 @@ export const BlackStar = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={blackStar}
       alt="tiny"
     />
@@ -162,7 +162,7 @@ export const PurpleStarBig = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={purpleStarBig}
       alt="tiny"
     />
@@ -173,7 +173,7 @@ export const PurpleStarSmall = ({ className }: { className: string }) => {
   return (
     <img
       style={{ position: "absolute" }}
-      className={className}
+      className={`animated ${className}`}
       src={purpleStarSmall}
       alt="tiny"
     />
