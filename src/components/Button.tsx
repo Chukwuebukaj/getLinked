@@ -3,7 +3,7 @@ interface ButtonProps {
   className?: string;
   id?: string;
   children?: string | ReactNode;
-  title: string;
+  title?: string;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   onClick?: () => void;
